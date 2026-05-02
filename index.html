@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TuCréditoExplicado — Asesoría en Créditos · Colombia</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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ампue0USDTi040+ZRBTpsM/V9R/9A5FLYhAQhO6hRsvSMw8cO/sZcYd/WQLMCEcigPSA2DoCwEaMnBMjAYKKAfh8WnmalrhBMnTFtpCQgAAc5UCQUCR0J2yFqolIIQbeB2ImQPvF6J6/vX6k77CJz1gO+jJsRykWggAhNSjHhtS1tkH9+6zfBQCmSQhEt/K7FLESAAAwcaIhD5/VXkvWtGylbIDbk5wQAiAfM/OFhpOhEADEYvJA7JJg+zs9GHSuH3lPINymJinHaiNAZwBEZBNJ3SOd6v1b3pjMMQp/IJYREAwqAMSEDVLwCU1qqexwC0ExQyaC0AbHqVPM1FH5xYRYfSECAAxm1L67eldZqX8VMQ8Lt0V+0xq2fq+Uc9f1PbI21G1bt5lmzoyZ9y8LRsf2dvSkSanXFZbeMcBfWpx3x6Ss7/73/8Bl+SDqUlzOvTYZHfcIwaB75W6cOHHixIkTJ06cOHHixInzr/wdxqn84JlsrLcAAAAASUVORK5CYII=">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:ital,opsz,wght@0,4..65,300;0,4..65,400;0,4..65,500;0,4..65,600;1,4..65,300&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+:root{
+  --g:#00C896;--g2:#00A37A;--g3:#00E5B0;
+  --r:#FF4C4C;--y:#FFD166;
+  --bg:#080C0A;--bg2:#0E1511;--bg3:#131A15;
+  --tx:#E4F2EC;--tx2:#9FBDAD;--tx3:#5A7A68;
+  --bd:rgba(0,200,150,.12);--bd2:rgba(0,200,150,.24);
+  --fs:17px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:var(--fs)}
+body{font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:17px 5%;background:rgba(8,12,10,.9);backdrop-filter:blur(28px);border-bottom:1px solid var(--bd)}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:-.04em;color:var(--g)}
+.logo b{color:var(--tx)}
+.nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none}
+.nav-links a{color:var(--tx2);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--g)}
+.nav-pill{background:var(--g)!important;color:#060A07!important;padding:9px 19px;border-radius:100px;font-weight:700!important;font-size:.85rem!important;transition:all .18s!important}
+.nav-pill:hover{background:var(--g2)!important;transform:scale(1.04)!important}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 5% 80px;position:relative;overflow:hidden}
+.hg{position:absolute;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:70px 70px;mask-image:radial-gradient(ellipse 75% 65% at 62% 50%,black,transparent);pointer-events:none}
+.hgl{position:absolute;width:660px;height:660px;background:radial-gradient(circle,rgba(0,200,150,.085),transparent 68%);top:50%;left:60%;transform:translate(-50%,-50%);pointer-events:none}
+.hgl2{position:absolute;width:240px;height:240px;background:radial-gradient(circle,rgba(0,200,150,.05),transparent 70%);top:10%;left:3%;pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(0,200,150,.07);border:1px solid rgba(0,200,150,.22);border-radius:100px;padding:6px 16px 6px 10px;margin-bottom:28px;width:fit-content;animation:up .7s ease both}
+.ew-dot{width:8px;height:8px;background:var(--g);border-radius:50%;animation:blink 2s ease infinite;flex-shrink:0}
+.eyebrow span{font-size:.78rem;font-weight:700;color:var(--g);letter-spacing:.07em;text-transform:uppercase}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.3rem,4.8vw,4.4rem);line-height:1.06;letter-spacing:-.045em;max-width:720px;animation:up .7s .08s ease both}
+h1 em{font-style:normal;background:linear-gradient(125deg,var(--g),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-p{font-size:1.12rem;color:var(--tx2);max-width:520px;line-height:1.78;margin-top:22px;font-weight:300;animation:up .7s .16s ease both}
+.hero-acts{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;animation:up .7s .24s ease both}
+.btn-g{display:inline-flex;align-items:center;gap:9px;background:var(--g);color:#060A07;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;padding:15px 28px;border-radius:100px;text-decoration:none;transition:all .2s;box-shadow:0 0 30px rgba(0,200,150,.24)}
+.btn-g:hover{background:var(--g2);transform:translateY(-2px);box-shadow:0 0 44px rgba(0,200,150,.34)}
+.btn-o{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--bd2);color:var(--tx);font-size:.95rem;padding:15px 24px;border-radius:100px;text-decoration:none;transition:all .2s;font-weight:500}
+.btn-o:hover{border-color:var(--g);background:rgba(0,200,150,.05)}
+.hero-stats{display:flex;gap:40px;margin-top:52px;animation:up .7s .32s ease both;flex-wrap:wrap}
+.stat-n{font-family:'Syne',sans-serif;font-weight:800;font-size:2rem;letter-spacing:-.04em;color:var(--g);line-height:1}
+.stat-l{font-size:.78rem;color:var(--tx2);max-width:135px;line-height:1.5;margin-top:4px}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.7)}}
+
+.whysec{background:var(--bg2);padding:92px 5%}
+.why-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;max-width:1060px;margin:0 auto}
+.why-badges{display:flex;flex-direction:column;gap:9px;margin-top:28px}
+.why-badge{display:flex;align-items:center;gap:11px;font-size:.88rem;color:var(--tx2);font-weight:400}
+.wb-ico{font-size:1rem;flex-shrink:0;width:22px}
+.why-right{display:flex;flex-direction:column;gap:16px;padding-top:8px}
+.why-card{background:rgba(255,255,255,.018);border:1px solid var(--bd);border-radius:14px;padding:24px;transition:border-color .2s}
+.why-card:hover{border-color:var(--bd2)}
+.wc-num{font-family:'Syne',sans-serif;font-weight:800;font-size:2rem;color:rgba(0,200,150,.18);letter-spacing:-.04em;line-height:1;margin-bottom:6px}
+.wc-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;margin-bottom:7px;color:var(--tx)}
+.wc-desc{font-size:.83rem;color:var(--tx2);line-height:1.68;font-weight:300}
+
+.aband{background:linear-gradient(90deg,rgba(255,76,76,.09),rgba(255,76,76,.04));border-top:1px solid rgba(255,76,76,.16);border-bottom:1px solid rgba(255,76,76,.16);padding:16px 5%;display:flex;align-items:center;gap:14px}
+.aband p{font-size:.93rem;color:#FFA8A8;line-height:1.6}
+.aband strong{color:var(--r)}
+
+section{padding:92px 5%}
+.sl{font-size:.73rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--g);margin-bottom:12px}
+.st{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.75rem,2.9vw,2.6rem);letter-spacing:-.04em;line-height:1.12}
+.ss{color:var(--tx2);font-size:.98rem;line-height:1.78;margin-top:13px;font-weight:300}
+
+.dsec{background:var(--bg);position:relative;overflow:hidden}
+.dsec::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:840px;height:540px;background:radial-gradient(ellipse,rgba(0,200,150,.048),transparent 65%);pointer-events:none}
+.dhead{text-align:center;margin-bottom:44px}
+.ftag{display:inline-flex;align-items:center;gap:7px;background:rgba(255,209,102,.09);border:1px solid rgba(255,209,102,.24);border-radius:100px;padding:5px 14px;font-size:.74rem;font-weight:700;color:var(--y);letter-spacing:.09em;text-transform:uppercase;margin-bottom:14px}
+.dshell{max-width:720px;margin:0 auto;background:rgba(255,255,255,.015);border:1px solid var(--bd);border-radius:22px;overflow:hidden;box-shadow:0 28px 68px rgba(0,0,0,.44)}
+.dptrack{height:4px;background:rgba(0,200,150,.07)}
+.dpbar{height:100%;background:linear-gradient(90deg,var(--g),var(--g3));width:0;transition:width .5s cubic-bezier(.22,1,.36,1)}
+.din{padding:42px 48px 38px}
+.ds{display:none;animation:sIn .3s ease both}
+.ds.on{display:block}
+@keyframes sIn{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}
+.dstag{font-size:.72rem;font-weight:700;color:var(--g);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.dq{font-family:'Syne',sans-serif;font-weight:700;font-size:1.28rem;line-height:1.32;letter-spacing:-.025em;margin-bottom:6px}
+.dh{font-size:.85rem;color:var(--tx2);font-weight:300;line-height:1.6;margin-bottom:24px}
+.dopts{display:grid;gap:10px}
+.dopts.g2{grid-template-columns:1fr 1fr}
+.dopts.g3{grid-template-columns:1fr 1fr 1fr}
+.dopt{border:1px solid var(--bd);border-radius:12px;padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--tx);background:rgba(255,255,255,.01);transition:all .16s;user-select:none;line-height:1.4}
+.dopt:hover{border-color:var(--bd2);background:rgba(0,200,150,.03);transform:translateX(2px)}
+.dopt.sel{border-color:var(--g);background:rgba(0,200,150,.07);color:var(--g);font-weight:600}
+.dico{font-size:1.15rem;flex-shrink:0;width:24px;text-align:center}
+.dnav{display:flex;align-items:center;justify-content:space-between;margin-top:26px;padding-top:22px;border-top:1px solid var(--bd)}
+.dback{background:none;border:1px solid var(--bd);color:var(--tx2);font-family:'Instrument Sans',sans-serif;font-size:.86rem;padding:10px 20px;border-radius:100px;cursor:pointer;transition:all .16s}
+.dback:hover{border-color:var(--g);color:var(--g)}
+.dctr{font-size:.76rem;color:var(--tx3)}
+.dnext{background:var(--g);border:none;color:#060A07;font-family:'Syne',sans-serif;font-weight:700;font-size:.92rem;padding:12px 26px;border-radius:100px;cursor:pointer;transition:all .16s}
+.dnext:hover:not(:disabled){background:var(--g2);transform:translateY(-1px)}
+.dnext:disabled{opacity:.3;cursor:not-allowed}
+.dres{display:none;text-align:center;padding:4px 0}
+.dres.on{display:block}
+.dring{width:96px;height:96px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;position:relative}
+.dring::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:2px solid;animation:rp 2.4s ease infinite;opacity:.22}
+.dring.g{background:rgba(0,200,150,.1);border:2px solid var(--g);box-shadow:0 0 34px rgba(0,200,150,.16)}.dring.g::after{border-color:var(--g)}
+.dring.y{background:rgba(255,209,102,.1);border:2px solid var(--y);box-shadow:0 0 34px rgba(255,209,102,.13)}.dring.y::after{border-color:var(--y)}
+.dring.r{background:rgba(255,76,76,.1);border:2px solid var(--r);box-shadow:0 0 34px rgba(255,76,76,.15)}.dring.r::after{border-color:var(--r)}
+@keyframes rp{0%,100%{transform:scale(1);opacity:.22}50%{transform:scale(1.09);opacity:.09}}
+.drtag{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}
+.drtag.g{color:var(--g)}.drtag.y{color:var(--y)}.drtag.r{color:var(--r)}
+.drtitle{font-family:'Syne',sans-serif;font-weight:800;font-size:1.55rem;letter-spacing:-.03em;margin-bottom:10px}
+.drdesc{font-size:.92rem;color:var(--tx2);line-height:1.75;max-width:440px;margin:0 auto 22px;font-weight:300}
+.drbar{max-width:360px;margin:0 auto 26px;background:rgba(255,255,255,.05);border-radius:100px;height:8px;overflow:hidden}
+.drbar-f{height:100%;border-radius:100px;transition:width 1.4s cubic-bezier(.22,1,.36,1)}
+.dalerts{text-align:left;background:rgba(255,255,255,.015);border:1px solid var(--bd);border-radius:14px;padding:22px;margin-bottom:20px}
+.dalerts-lbl{font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--tx3);margin-bottom:14px}
+.dalert-row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.88rem;line-height:1.58}
+.dalert-row:last-child{border-bottom:none;padding-bottom:0}
+.dai{font-size:1rem;flex-shrink:0;margin-top:1px}
+.dcta{background:linear-gradient(135deg,rgba(0,200,150,.08),rgba(0,200,150,.02));border:1px solid rgba(0,200,150,.2);border-radius:14px;padding:23px}
+.dcta p{font-size:.9rem;color:var(--tx2);margin-bottom:14px;line-height:1.68}
+.dcta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.drestart{background:none;border:none;color:var(--tx3);font-family:'Instrument Sans',sans-serif;font-size:.82rem;cursor:pointer;margin-top:16px;text-decoration:underline;transition:color .2s}
+.drestart:hover{color:var(--g)}
+
+.cmpsec{background:var(--bg2)}
+.cmphdr{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:end;margin-bottom:50px}
+.cmpgrid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--bd);border-radius:18px;overflow:hidden;max-width:940px;margin:0 auto}
+.cmpcol{padding:42px 38px}
+.cmppre{background:rgba(255,76,76,.04);border-right:1px solid var(--bd)}
+.cmppost{background:rgba(0,200,150,.034)}
+.cmphead{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;display:flex;align-items:center;gap:10px;padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--bd)}
+.tr{background:rgba(255,76,76,.16);color:var(--r);font-size:.66rem;padding:2px 9px;border-radius:100px;font-weight:700;letter-spacing:.05em}
+.tg{background:rgba(0,200,150,.13);color:var(--g);font-size:.66rem;padding:2px 9px;border-radius:100px;font-weight:700;letter-spacing:.05em}
+.cmpitem{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.cmpitem:last-child{border-bottom:none;padding-bottom:0}
+.cmpit{font-size:.93rem;font-weight:600;display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.cmpid{font-size:.83rem;color:var(--tx2);line-height:1.65;font-weight:300}
+.ir{color:var(--r)}.ig{color:var(--g)}
+
+.bnksec{background:var(--bg3)}
+.bnkhdr{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:46px}
+.bnkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(256px,1fr));gap:17px}
+.bnkcard{background:rgba(255,255,255,.017);border:1px solid var(--bd);border-radius:15px;padding:26px;transition:all .2s;cursor:default}
+.bnkcard:hover{border-color:var(--bd2);background:rgba(0,200,150,.03);transform:translateY(-3px)}
+.bico{font-size:1.8rem;margin-bottom:12px}
+.bname{font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;margin-bottom:5px}
+.bdesc{font-size:.82rem;color:var(--tx2);line-height:1.65;font-weight:300;margin-bottom:12px}
+.btags{display:flex;flex-wrap:wrap;gap:5px}
+.bt{font-size:.66rem;padding:3px 9px;border-radius:100px;font-weight:600;border:1px solid}
+.bt-g{background:rgba(0,200,150,.07);border-color:rgba(0,200,150,.2);color:var(--g)}
+.bt-y{background:rgba(255,209,102,.06);border-color:rgba(255,209,102,.2);color:var(--y)}
+.bt-r{background:rgba(255,76,76,.06);border-color:rgba(255,76,76,.17);color:var(--r)}
+
+.resenas-sec{background:var(--bg)}
+.resenas-head{text-align:center;margin-bottom:48px}
+.stars-global{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
+.star-val{font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;color:var(--y);letter-spacing:-.03em}
+.star-ico{font-size:1.1rem;color:var(--y)}
+.star-cnt{font-size:.82rem;color:var(--tx2)}
+.resenas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;max-width:1060px;margin:0 auto}
+.rcard{background:rgba(255,255,255,.018);border:1px solid var(--bd);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s}
+.rcard:hover{border-color:var(--bd2)}
+.rcard-top{display:flex;align-items:center;gap:13px}
+.rav{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#fff;flex-shrink:0}
+.rname{font-family:'Syne',sans-serif;font-weight:700;font-size:.93rem}
+.rcity{font-size:.75rem;color:var(--tx2);margin-top:1px}
+.rstars{font-size:.9rem;color:var(--y);letter-spacing:1px;margin-bottom:2px}
+.rtag{display:inline-block;background:rgba(0,200,150,.08);border:1px solid rgba(0,200,150,.18);border-radius:100px;font-size:.65rem;font-weight:700;color:var(--g);padding:2px 10px;letter-spacing:.05em;text-transform:uppercase}
+.rtxt{font-size:.86rem;color:var(--tx2);line-height:1.72;font-weight:300;font-style:italic}
+.rtxt::before{content:'\201C'}
+.rtxt::after{content:'\201D'}
+
+.svssec{background:var(--bg2)}
+.svshdr{text-align:center;margin-bottom:50px}
+.svsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px;max-width:1060px;margin:0 auto}
+.sv{border:1px solid var(--bd);border-radius:20px;padding:34px 30px;display:flex;flex-direction:column;background:rgba(255,255,255,.012);transition:all .22s;position:relative;overflow:hidden}
+.sv:hover{border-color:var(--bd2);transform:translateY(-4px)}
+.sv.hot{background:linear-gradient(145deg,rgba(0,200,150,.07),rgba(0,200,150,.018));border-color:rgba(0,200,150,.3)}
+.sv-htag{position:absolute;top:14px;right:-29px;background:var(--g);color:#060A07;font-size:.58rem;font-weight:800;letter-spacing:.07em;padding:4px 37px;transform:rotate(35deg)}
+.sv-ico{font-size:1.9rem;margin-bottom:14px}
+.sv-name{font-family:'Syne',sans-serif;font-weight:700;font-size:1.02rem;margin-bottom:7px}
+.sv-desc{font-size:.84rem;color:var(--tx2);font-weight:300;line-height:1.65;margin-bottom:16px;flex-grow:1}
+.sv-price{font-family:'Syne',sans-serif;font-weight:800;font-size:1.95rem;letter-spacing:-.04em;color:var(--g);line-height:1;margin-bottom:4px}
+.sv-pnote{font-size:.74rem;color:var(--tx2);margin-bottom:14px}
+.sv-dl{font-size:.74rem;color:var(--tx2);display:flex;align-items:center;gap:5px;margin-bottom:17px}
+.sv-feats{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:21px}
+.sv-feats li{font-size:.82rem;display:flex;align-items:flex-start;gap:8px;line-height:1.45}
+.sv-feats li::before{content:'✓';color:var(--g);font-weight:700;flex-shrink:0;margin-top:1px}
+.sv-cta{display:block;text-align:center;padding:13px;border-radius:100px;font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;text-decoration:none;transition:all .2s;border:1px solid rgba(0,200,150,.26);color:var(--g);background:rgba(0,200,150,.07);cursor:pointer}
+.sv-cta:hover{background:var(--g);color:#060A07;border-color:var(--g)}
+.sv.hot .sv-cta{background:var(--g);color:#060A07;border-color:var(--g);box-shadow:0 0 24px rgba(0,200,150,.2)}
+.sv.hot .sv-cta:hover{background:var(--g2)}
+.cbar{max-width:1060px;margin:22px auto 0;background:linear-gradient(135deg,rgba(255,209,102,.075),rgba(255,209,102,.018));border:1px solid rgba(255,209,102,.2);border-radius:14px;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.cbar-l{display:flex;align-items:center;gap:13px}
+.cbar-ttl{font-family:'Syne',sans-serif;font-weight:700;font-size:.92rem;color:var(--y);margin-bottom:3px}
+.cbar-sub{font-size:.8rem;color:var(--tx2)}
+.cbar-r{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.cold{font-size:.84rem;color:var(--tx3);text-decoration:line-through}
+.cnew{font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;color:var(--y)}
+.cbtn{background:rgba(255,209,102,.12);border:1px solid rgba(255,209,102,.26);color:var(--y);font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;padding:10px 20px;border-radius:100px;text-decoration:none;white-space:nowrap;transition:background .2s}
+.cbtn:hover{background:rgba(255,209,102,.22)}
+
+.rpsec{background:var(--bg3)}
+.rphdr{text-align:center;margin-bottom:50px}
+.rpshell{max-width:760px;margin:0 auto;border:1px solid var(--bd);border-radius:20px;overflow:hidden;background:rgba(255,255,255,.012)}
+.rptabs{display:flex;border-bottom:1px solid var(--bd)}
+.rptab{flex:1;padding:16px;text-align:center;font-size:.86rem;font-weight:600;color:var(--tx2);cursor:pointer;transition:all .2s;border-bottom:2px solid transparent;margin-bottom:-1px;user-select:none}
+.rptab.on{color:var(--g);border-bottom-color:var(--g);background:rgba(0,200,150,.032)}
+.rptab:hover:not(.on){color:var(--tx)}
+.rppanel{display:none;padding:36px 40px}
+.rppanel.on{display:block}
+.rpform{display:flex;flex-direction:column;gap:17px}
+.rrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rfield{display:flex;flex-direction:column;gap:6px}
+.rlbl{font-size:.76rem;font-weight:700;color:var(--tx2);letter-spacing:.05em;text-transform:uppercase}
+.rinp,.rsel,.rta{background:rgba(255,255,255,.034);border:1px solid var(--bd);border-radius:10px;padding:13px 15px;color:var(--tx);font-family:'Instrument Sans',sans-serif;font-size:.92rem;outline:none;transition:border-color .17s;width:100%}
+.rinp:focus,.rsel:focus,.rta:focus{border-color:var(--g)}
+.rinp::placeholder,.rta::placeholder{color:var(--tx3);opacity:.9}
+.rsel option{background:#0E1511;color:var(--tx)}
+.rta{resize:vertical;min-height:80px;line-height:1.58}
+
+/* ── EFIPAY PAYMENT BOX ── */
+.wbox{background:linear-gradient(135deg,rgba(0,200,150,.065),rgba(0,200,150,.02));border:1px solid rgba(0,200,150,.22);border-radius:13px;padding:22px 24px}
+.wtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}
+.wlbl{font-size:.8rem;color:var(--tx2);font-weight:500}
+.wlbl2{font-size:.74rem;color:var(--tx3);margin-top:3px}
+.wprice{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--g);letter-spacing:-.03em}
+.wnote{font-size:.78rem;color:var(--tx2);margin-bottom:17px;line-height:1.65}
+.wnote strong{color:var(--tx)}
+.wbtn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#00C896,#00A37A);border:none;border-radius:100px;padding:15px;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:#060A07;cursor:pointer;transition:all .2s;box-shadow:0 0 26px rgba(0,200,150,.2);letter-spacing:.01em}
+.wbtn:hover{transform:translateY(-1px);box-shadow:0 0 40px rgba(0,200,150,.32)}
+.wbtn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.met-btn{flex:1;padding:10px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;cursor:pointer;border:1px solid var(--bd);background:rgba(255,255,255,.02);color:var(--tx2);transition:all .18s}
+.met-btn.met-on{background:rgba(0,200,150,.1);border-color:var(--g);color:var(--g)}
+.met-btn:hover:not(.met-on){border-color:var(--bd2);color:var(--tx)}
+.vmsg{font-size:.8rem;margin-top:10px;padding:11px 14px;border-radius:9px;display:none;line-height:1.55}
+.vmsg.ok{display:block;background:rgba(0,200,150,.07);border:1px solid rgba(0,200,150,.19);color:var(--g)}
+.vmsg.err{display:block;background:rgba(255,76,76,.06);border:1px solid rgba(255,76,76,.17);color:var(--r)}
+.vmsg.wait{display:block;background:rgba(255,209,102,.06);border:1px solid rgba(255,209,102,.18);color:var(--y)}
+.wauto-note{display:flex;align-items:center;gap:11px;margin-top:14px;padding:13px 16px;background:rgba(0,200,150,.06);border:1px solid rgba(0,200,150,.2);border-radius:10px;font-size:.82rem;color:var(--g)}
+.wauto-spinner{width:16px;height:16px;border:2px solid rgba(0,200,150,.25);border-top-color:var(--g);border-radius:50%;animation:spin .8s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.rplocked{text-align:center;padding:48px 20px}
+.lkico{font-size:2.8rem;margin-bottom:16px;opacity:.45}
+.lktitle{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:8px;color:var(--tx2)}
+.lkdesc{font-size:.86rem;color:var(--tx3);line-height:1.7;max-width:360px;margin:0 auto}
+
+.rpreport{display:none}
+.rpreport.on{display:block}
+
+.score-panel{background:linear-gradient(135deg,rgba(0,0,0,.3),rgba(0,0,0,.1));border:1px solid var(--bd);border-radius:16px;padding:24px 28px;margin-bottom:20px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.score-circle{width:90px;height:90px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;position:relative}
+.score-circle::before{content:'';position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(var(--sc,#00C896) var(--pct,0deg), rgba(255,255,255,.05) 0deg)}
+.score-circle::after{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg3)}
+.score-num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;line-height:1;position:relative;z-index:1}
+.score-max{font-size:.62rem;color:var(--tx3);position:relative;z-index:1}
+.score-info{flex:1;min-width:180px}
+.score-label{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:4px}
+.score-sub{font-size:.8rem;color:var(--tx2);line-height:1.55;margin-bottom:10px}
+.score-bars{display:flex;flex-direction:column;gap:6px}
+.sbar-row{display:flex;align-items:center;gap:10px;font-size:.72rem;color:var(--tx2)}
+.sbar-label{width:90px;flex-shrink:0}
+.sbar-track{flex:1;height:5px;background:rgba(255,255,255,.06);border-radius:100px;overflow:hidden}
+.sbar-fill{height:100%;border-radius:100px;transition:width 1.2s cubic-bezier(.22,1,.36,1)}
+.sbar-val{width:24px;text-align:right;font-weight:600;flex-shrink:0}
+
+.rpdocwrap{background:var(--bg3);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.rpdochdr{background:linear-gradient(135deg,rgba(0,200,150,.075),rgba(0,200,150,.02));border-bottom:1px solid var(--bd);padding:24px 28px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.rpbrand{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--g);margin-bottom:2px}
+.rpbrand-sub{font-size:.74rem;color:var(--tx3)}
+.rpmeta{text-align:right;font-size:.76rem;color:var(--tx3);line-height:1.7}
+.rpscore-row{display:flex;align-items:center;gap:14px;padding:20px 28px;border-bottom:1px solid var(--bd);background:rgba(255,255,255,.01)}
+.rpscore-ico{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.45rem;flex-shrink:0}
+.rpscore-lbl{font-family:'Syne',sans-serif;font-weight:700;font-size:.92rem;margin-bottom:3px}
+.rpscore-sub{font-size:.78rem;color:var(--tx2)}
+.rpbody{padding:24px 28px;display:flex;flex-direction:column}
+.rpsection{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.038)}
+.rpsection:last-child{border-bottom:none}
+.rpstitle{display:flex;align-items:center;gap:9px;font-family:'Syne',sans-serif;font-weight:700;font-size:.84rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.rpsico{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.rpsico.g{background:rgba(0,200,150,.11)}.rpsico.y{background:rgba(255,209,102,.09)}.rpsico.r{background:rgba(255,76,76,.08)}.rpsico.b{background:rgba(100,160,255,.09)}
+.rpcontent{font-size:.88rem;color:var(--tx2);line-height:1.8;font-weight:300}
+.rpcontent strong{color:var(--tx);font-weight:600}
+.hl{background:rgba(0,200,150,.07);border:1px solid rgba(0,200,150,.17);border-radius:8px;padding:10px 14px;margin:10px 0;display:block;font-size:.86rem;line-height:1.68}
+.warnbox{background:rgba(255,76,76,.055);border:1px solid rgba(255,76,76,.15);border-radius:8px;padding:10px 14px;margin:10px 0;display:block;font-size:.86rem;line-height:1.68;color:#FFA8A8}
+.tipbox{background:rgba(255,209,102,.055);border:1px solid rgba(255,209,102,.15);border-radius:8px;padding:10px 14px;margin:10px 0;display:block;font-size:.86rem;line-height:1.68;color:#FFE4A0}
+.rplist{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:8px}
+.rplist li{font-size:.87rem;color:var(--tx2);display:flex;align-items:flex-start;gap:9px;line-height:1.62}
+.lin{font-family:'Syne',sans-serif;font-weight:800;font-size:.76rem;color:var(--g);background:rgba(0,200,150,.1);border-radius:100px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.lin.r{color:var(--r);background:rgba(255,76,76,.1)}.lin.y{color:var(--y);background:rgba(255,209,102,.1)}.lin.b{color:#6B9FFF;background:rgba(100,160,255,.1)}
+.rpacts{display:flex;gap:10px;padding:20px 28px;background:rgba(255,255,255,.01);border-top:1px solid var(--bd);flex-wrap:wrap}
+.rpd{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(0,200,150,.07);border:1px solid rgba(0,200,150,.21);color:var(--g);font-family:'Syne',sans-serif;font-weight:700;font-size:.84rem;padding:13px;border-radius:100px;cursor:pointer;transition:all .2s}
+.rpd:hover{background:var(--g);color:#060A07}
+.rpd.loading{opacity:.6;cursor:not-allowed}
+.rpw{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(37,211,102,.07);border:1px solid rgba(37,211,102,.2);color:#25D366;font-family:'Syne',sans-serif;font-weight:700;font-size:.84rem;padding:13px;border-radius:100px;text-decoration:none;transition:all .2s}
+.rpw:hover{background:rgba(37,211,102,.17)}
+.rpdisc{font-size:.72rem;color:var(--tx3);text-align:center;padding:0 28px 16px;line-height:1.65;font-style:italic}
+
+.faqsec{background:var(--bg2)}
+.faqwrap{max-width:680px;margin:46px auto 0}
+.faqitem{border:1px solid var(--bd);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.faqq{padding:18px 22px;font-size:.93rem;font-weight:500;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background .17s;user-select:none}
+.faqq:hover{background:rgba(0,200,150,.03)}
+.faqarr{color:var(--g);font-size:1.1rem;transition:transform .3s;flex-shrink:0;margin-left:12px}
+.faqitem.open .faqarr{transform:rotate(45deg)}
+.faqa{max-height:0;overflow:hidden;font-size:.86rem;color:var(--tx2);line-height:1.76;font-weight:300;padding:0 22px;transition:max-height .35s ease,padding .3s}
+.faqitem.open .faqa{max-height:300px;padding:0 22px 18px}
+
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding:42px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.flogo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--g)}
+.fnote{font-size:.76rem;color:var(--tx2);text-align:center;line-height:1.68}
+.flinks{display:flex;gap:18px}
+.flinks a{color:var(--tx2);text-decoration:none;font-size:.8rem;transition:color .2s}
+.flinks a:hover{color:var(--g)}
+
+.wafab{position:fixed;bottom:24px;right:24px;z-index:400;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 18px rgba(37,211,102,.34);text-decoration:none;animation:fab 3s ease-in-out infinite;transition:transform .2s,box-shadow .2s}
+.wafab:hover{transform:scale(1.1) translateY(-2px)!important;box-shadow:0 6px 26px rgba(37,211,102,.48)}
+@keyframes fab{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.rv.vis{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .why-inner{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .cmphdr,.bnkhdr{grid-template-columns:1fr}
+  .cmpgrid,.svsgrid{grid-template-columns:1fr}
+  .cmppre{border-right:none;border-bottom:1px solid var(--bd)}
+  .rrow{grid-template-columns:1fr}
+  .rppanel{padding:22px 18px}
+  .din{padding:26px 18px 22px}
+  .dopts.g2,.dopts.g3{grid-template-columns:1fr 1fr}
+  footer{flex-direction:column;text-align:center}
+  .cbar{flex-direction:column;align-items:flex-start}
+  .rpdochdr{flex-direction:column;gap:8px}
+  .rpmeta{text-align:left}
+  .rpacts{flex-direction:column}
+  .hero-stats{gap:22px}
+  .score-panel{flex-direction:column;align-items:flex-start}
+  .resenas-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">TuCrédito<b>Explicado</b></div>
+  <ul class="nav-links">
+    <li><a href="#diagnostico">Diagnóstico gratis</a></li>
+    <li><a href="#problema">Cómo funciona</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#reporte">Reporte PDF</a></li>
+    <li><a href="https://wa.me/573132298963?text=Hola%2C+quiero+información" target="_blank" class="nav-pill">Agendar asesoría →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hg"></div><div class="hgl"></div><div class="hgl2"></div>
+  <div class="eyebrow"><div class="ew-dot"></div><span>No somos un banco · Somos tu asesor independiente</span></div>
+  <h1>El banco sabe<br>más que tú.<br><em>Eso va a cambiar.</em></h1>
+  <p class="hero-p">En Colombia, la mayoría de personas firma créditos sin entender realmente cuánto paga ni qué derechos tiene. Nosotros traducimos el lenguaje bancario a números claros — y te decimos exactamente qué hacer.</p>
+  <div class="hero-acts">
+    <a href="#diagnostico" class="btn-g">🩺 Diagnóstico gratuito</a>
+    <a href="#servicios" class="btn-o">Ver servicios →</a>
+  </div>
+  <div class="hero-stats">
+    <div><div class="stat-n">68%</div><div class="stat-l">de colombianos no conoce su tasa EA real</div></div>
+    <div><div class="stat-n">3×</div><div class="stat-l">más caro puede ser un crédito sin asesoría</div></div>
+    <div><div class="stat-n">94</div><div class="stat-l">asesorías completadas · calificación 4.9★</div></div>
+  </div>
+</section>
+
+<!-- ALERT BAND -->
+<div class="aband">
+  <span style="font-size:1.3rem;flex-shrink:0">⚠️</span>
+  <p><strong>¿Firmaste sin leer el contrato?</strong> No estás solo/a — el 68% de colombianos lo hace. Si no sabes si tu tasa es fija o variable, si te están cobrando de más, o si recibes llamadas de cobranza abusivas: <strong>hay salidas concretas</strong>.</p>
+</div>
+
+<!-- POR QUÉ EXISTIMOS -->
+<section class="whysec">
+  <div class="why-inner">
+    <div class="why-left">
+      <div class="sl">Por qué existimos</div>
+      <h2 class="st">No prestamos dinero.<br><em style="font-style:normal;color:var(--g)">Te enseñamos a no perderlo.</em></h2>
+      <p class="ss" style="margin-top:14px">Los bancos tienen equipos legales, analistas financieros y décadas de experiencia redactando contratos que pocos entienden. Tú, al momento de firmar, tienes 10 minutos y letra pequeña.</p>
+      <p class="ss" style="margin-top:12px">TuCréditoExplicado existe para equilibrar eso. Somos asesores <strong style="color:var(--tx)">independientes</strong> — no ganamos comisión de ningún banco, no tenemos productos que venderte. Solo información que te pone de tu lado.</p>
+      <div class="why-badges">
+        <div class="why-badge"><span class="wb-ico">🚫</span><span>Sin afiliación a bancos</span></div>
+        <div class="why-badge"><span class="wb-ico">🚫</span><span>Sin comisiones ocultas</span></div>
+        <div class="why-badge"><span class="wb-ico">✅</span><span>Asesor de tu lado, no del banco</span></div>
+      </div>
+    </div>
+    <div class="why-right">
+      <div class="why-card"><div class="wc-num">01</div><div class="wc-title">Analizamos tu crédito</div><div class="wc-desc">Calculamos tu tasa EA real, el costo total en pesos y detectamos cláusulas de riesgo que el banco no te explicó.</div></div>
+      <div class="why-card"><div class="wc-num">02</div><div class="wc-title">Te decimos la verdad</div><div class="wc-desc">Si el crédito es bueno, te lo decimos. Si es una mala decisión o hay cargos ilegales, también. Sin rodeos.</div></div>
+      <div class="why-card"><div class="wc-num">03</div><div class="wc-title">Te damos un plan concreto</div><div class="wc-desc">No teoría — pasos específicos para tu caso: qué negociar, qué reclamar, cómo normalizar tu situación.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNÓSTICO -->
+<section id="diagnostico" class="dsec">
+  <div class="dhead">
+    <div class="ftag">⚡ Gratis · 2 minutos</div>
+    <div class="sl" style="text-align:center">Herramienta gratuita</div>
+    <h2 class="st" style="text-align:center;margin:0 auto">Diagnóstico de <em style="font-style:normal;color:var(--g)">Salud Crediticia</em></h2>
+    <p class="ss" style="text-align:center;margin:12px auto 0;max-width:460px">8 preguntas. Recibe tu semáforo personalizado con alertas reales sobre tu situación.</p>
+  </div>
+  <div class="dshell">
+    <div class="dptrack"><div class="dpbar" id="dP"></div></div>
+    <div class="din">
+      <div class="ds on" data-step="1"><div class="dstag">Pregunta 1 de 8</div><div class="dq">¿Cuál es tu situación crediticia actual?</div><div class="dh">Selecciona la que mejor te describe</div><div class="dopts"><div class="dopt" data-k="sit" data-p="0" onclick="dS(this)"><span class="dico">🔍</span>Buscando crédito — quiero entender qué firmaré</div><div class="dopt" data-k="sit" data-p="1" onclick="dS(this)"><span class="dico">📋</span>Crédito activo y quiero revisar mis condiciones</div><div class="dopt" data-k="sit" data-p="3" onclick="dS(this)"><span class="dico">⚠️</span>Tengo dificultades para pagar mis cuotas</div><div class="dopt" data-k="sit" data-p="5" onclick="dS(this)"><span class="dico">🚨</span>Estoy en mora o reportado en central de riesgo</div></div><div class="dnav"><span class="dctr">1 / 8</span><button class="dnext" id="dn1" disabled onclick="dN(1)">Siguiente →</button></div></div>
+      <div class="ds" data-step="2"><div class="dstag">Pregunta 2 de 8</div><div class="dq">¿Con qué tipo de entidad tienes o buscas el crédito?</div><div class="dh">Selecciona la que más aplique</div><div class="dopts g2"><div class="dopt" data-k="ent" data-p="0" onclick="dS(this)"><span class="dico">🏦</span>Banco tradicional (Bancolombia, Davivienda, BBVA…)</div><div class="dopt" data-k="ent" data-p="1" onclick="dS(this)"><span class="dico">📱</span>Banco digital (Finandina, Ban100, Nu, Lulo…)</div><div class="dopt" data-k="ent" data-p="2" onclick="dS(this)"><span class="dico">⚡</span>Fintech / crédito rápido (RapiCredit, Addi…)</div><div class="dopt" data-k="ent" data-p="1" onclick="dS(this)"><span class="dico">🤝</span>Cooperativa o fondo de empleados</div><div class="dopt" data-k="ent" data-p="3" onclick="dS(this)"><span class="dico">🏢</span>Almacén de cadena (Falabella, Alkosto…)</div><div class="dopt" data-k="ent" data-p="5" onclick="dS(this)"><span class="dico">💸</span>Prestamista informal / gota a gota</div></div><div class="dnav"><button class="dback" onclick="dPr(2)">← Atrás</button><span class="dctr">2 / 8</span><button class="dnext" id="dn2" disabled onclick="dN(2)">Siguiente →</button></div></div>
+      <div class="ds" data-step="3"><div class="dstag">Pregunta 3 de 8</div><div class="dq">¿Conoces tu tasa de interés Efectiva Anual (EA)?</div><div class="dh">La EA es el número real — no la tasa mensual de la publicidad</div><div class="dopts"><div class="dopt" data-k="tasa" data-p="0" onclick="dS(this)"><span class="dico">✅</span>Sí, sé exactamente el porcentaje EA de mi crédito</div><div class="dopt" data-k="tasa" data-p="2" onclick="dS(this)"><span class="dico">🟡</span>Solo sé la tasa mensual, no la anual</div><div class="dopt" data-k="tasa" data-p="3" onclick="dS(this)"><span class="dico">🟠</span>Tengo una idea aproximada pero no el número exacto</div><div class="dopt" data-k="tasa" data-p="5" onclick="dS(this)"><span class="dico">🔴</span>No tengo idea de cuánto me están cobrando</div></div><div class="dnav"><button class="dback" onclick="dPr(3)">← Atrás</button><span class="dctr">3 / 8</span><button class="dnext" id="dn3" disabled onclick="dN(3)">Siguiente →</button></div></div>
+      <div class="ds" data-step="4"><div class="dstag">Pregunta 4 de 8</div><div class="dq">¿Tu tasa es fija o variable?</div><div class="dh">Variable = tu cuota puede subir si el IBR o DTF cambia</div><div class="dopts g3"><div class="dopt" data-k="tt" data-p="0" onclick="dS(this)"><span class="dico">🔒</span>Fija</div><div class="dopt" data-k="tt" data-p="3" onclick="dS(this)"><span class="dico">📈</span>Variable</div><div class="dopt" data-k="tt" data-p="4" onclick="dS(this)"><span class="dico">❓</span>No sé</div></div><div class="dnav"><button class="dback" onclick="dPr(4)">← Atrás</button><span class="dctr">4 / 8</span><button class="dnext" id="dn4" disabled onclick="dN(4)">Siguiente →</button></div></div>
+      <div class="ds" data-step="5"><div class="dstag">Pregunta 5 de 8</div><div class="dq">¿Leíste el contrato completo antes de firmar?</div><div class="dh">El documento completo con todas las cláusulas — no el resumen</div><div class="dopts"><div class="dopt" data-k="cont" data-p="0" onclick="dS(this)"><span class="dico">📖</span>Sí, lo leí completo y entendí las condiciones</div><div class="dopt" data-k="cont" data-p="1" onclick="dS(this)"><span class="dico">👁️</span>Lo revisé parcialmente</div><div class="dopt" data-k="cont" data-p="3" onclick="dS(this)"><span class="dico">✍️</span>Firmé sin leerlo en detalle</div><div class="dopt" data-k="cont" data-p="3" onclick="dS(this)"><span class="dico">📂</span>No tengo copia del contrato</div></div><div class="dnav"><button class="dback" onclick="dPr(5)">← Atrás</button><span class="dctr">5 / 8</span><button class="dnext" id="dn5" disabled onclick="dN(5)">Siguiente →</button></div></div>
+      <div class="ds" data-step="6"><div class="dstag">Pregunta 6 de 8</div><div class="dq">¿Has recibido contactos de cobranza?</div><div class="dh">Incluye llamadas, mensajes, cartas o notificaciones del banco</div><div class="dopts"><div class="dopt" data-k="cob" data-p="0" onclick="dS(this)"><span class="dico">🟢</span>No, estoy completamente al día</div><div class="dopt" data-k="cob" data-p="2" onclick="dS(this)"><span class="dico">🟡</span>He recibido avisos preventivos de pago</div><div class="dopt" data-k="cob" data-p="4" onclick="dS(this)"><span class="dico">📞</span>Recibo llamadas frecuentes de cobranza</div><div class="dopt" data-k="cob" data-p="6" onclick="dS(this)"><span class="dico">⚖️</span>Me han amenazado con acciones legales o embargo</div></div><div class="dnav"><button class="dback" onclick="dPr(6)">← Atrás</button><span class="dctr">6 / 8</span><button class="dnext" id="dn6" disabled onclick="dN(6)">Siguiente →</button></div></div>
+      <div class="ds" data-step="7"><div class="dstag">Pregunta 7 de 8</div><div class="dq">¿Qué porcentaje de tus ingresos va a pagar deudas?</div><div class="dh">Suma cuotas de créditos, tarjetas, libranzas, almacenes…</div><div class="dopts"><div class="dopt" data-k="end" data-p="0" onclick="dS(this)"><span class="dico">💚</span>Menos del 20% — estoy cómodo/a</div><div class="dopt" data-k="end" data-p="1" onclick="dS(this)"><span class="dico">🟡</span>Entre el 20% y el 40%</div><div class="dopt" data-k="end" data-p="3" onclick="dS(this)"><span class="dico">🟠</span>Entre el 40% y el 60%</div><div class="dopt" data-k="end" data-p="5" onclick="dS(this)"><span class="dico">🔴</span>Más del 60% — ya no me alcanza</div></div><div class="dnav"><button class="dback" onclick="dPr(7)">← Atrás</button><span class="dctr">7 / 8</span><button class="dnext" id="dn7" disabled onclick="dN(7)">Siguiente →</button></div></div>
+      <div class="ds" data-step="8"><div class="dstag">Última — 8 de 8</div><div class="dq">¿Conoces tus derechos como deudor en Colombia?</div><div class="dh">Ley 1328, Estatuto del Consumidor Financiero, tope de usura…</div><div class="dopts"><div class="dopt" data-k="der" data-p="0" onclick="dS(this)"><span class="dico">✅</span>Sí, los conozco bien y sé cómo aplicarlos</div><div class="dopt" data-k="der" data-p="1" onclick="dS(this)"><span class="dico">🟡</span>He escuchado algo pero no en detalle</div><div class="dopt" data-k="der" data-p="3" onclick="dS(this)"><span class="dico">🔴</span>No sé qué pueden y qué no pueden hacerme</div></div><div class="dnav"><button class="dback" onclick="dPr(8)">← Atrás</button><span class="dctr">8 / 8</span><button class="dnext" id="dn8" disabled onclick="dShowR()">Ver mi diagnóstico 🩺</button></div></div>
+      <div class="dres" id="dRes">
+        <div class="dring" id="dRing"></div><div class="drtag" id="dRtag"></div><div class="drtitle" id="dRtitle"></div><div class="drdesc" id="dRdesc"></div>
+        <div class="drbar"><div class="drbar-f" id="dRbar"></div></div>
+        <div class="dalerts" id="dAlerts"></div><div class="dcta" id="dCta"></div>
+        <button class="drestart" onclick="dRestart()">← Repetir diagnóstico</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRE/POST -->
+<section id="problema" class="cmpsec">
+  <div class="cmphdr"><div><div class="sl">El problema real</div><h2 class="st">Lo que el banco<br>no te cuenta.</h2></div><p class="ss">Dos momentos donde la información marca la diferencia. En el PRE, podemos evitar que firmes algo que te cueste millones. En el POST, hay rutas concretas que la mayoría no conoce.</p></div>
+  <div class="cmpgrid rv">
+    <div class="cmpcol cmppre">
+      <div class="cmphead">🔴 Antes de firmar <span class="tr">PRE</span></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ir">✗</span>Tasa EA vs. tasa mensual</div><div class="cmpid">Un "2,5% mensual" equivale a +34% EA. Una diferencia brutal que ningún banco te explica claramente.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ir">✗</span>Tasa variable sin advertir</div><div class="cmpid">Muchos contratos tienen cláusulas IBR o DTF. Si sube, tu cuota sube sin aviso — y puede volverse impagable.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ir">✗</span>Seguros y costos ocultos</div><div class="cmpid">Seguros de vida, desempleo y gastos de gestión pueden incrementar el costo real hasta un 25%.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ir">✗</span>Sin comparativa real</div><div class="cmpid">Hay hasta 15 puntos de diferencia en tasa entre entidades para el mismo perfil de riesgo.</div></div>
+    </div>
+    <div class="cmpcol cmppost">
+      <div class="cmphead">🟢 Durante el crédito <span class="tg">POST</span></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ig">→</span>Tasa variable que subió</div><div class="cmpid">Te enseñamos a leer tu estado de cuenta, detectar el cambio y renegociar.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ig">→</span>Cobranza agresiva</div><div class="cmpid">Existen límites legales claros. Te explicamos qué pueden y qué no pueden hacerte.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ig">→</span>Normalización de deuda</div><div class="cmpid">Acuerdos de pago, refinanciación, Ley de Insolvencia. Analizamos cuál aplica a tu caso.</div></div>
+      <div class="cmpitem"><div class="cmpit"><span class="ig">→</span>Plan de salida con números reales</div><div class="cmpid">Simulamos opciones con tus cifras exactas y cómo reconstruir tu historial crediticio.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTIDADES -->
+<section class="bnksec">
+  <div class="bnkhdr">
+    <div><div class="sl">Entidades que analizamos</div><h2 class="st">Las más usadas<br>en Colombia</h2></div>
+    <p class="ss">Trabajamos con clientes de los bancos más frecuentes — digitales, tradicionales, fintechs y cooperativas. Si tu entidad no está en la lista, igual podemos ayudarte.</p>
+  </div>
+  <div class="bnkgrid">
+    <div class="bnkcard rv" style="border-color:rgba(255,209,102,.22);background:rgba(255,209,102,.028)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:11px"><div class="bico" style="margin:0">🟩</div><span style="font-size:.6rem;font-weight:700;background:rgba(255,209,102,.15);border:1px solid rgba(255,209,102,.3);color:var(--y);padding:2px 9px;border-radius:100px;letter-spacing:.06em;text-transform:uppercase">⚠️ Revisión recomendada</span></div>
+      <div class="bname">Banco Finandina</div>
+      <div class="bdesc">Popular por aprobación rápida y proceso digital. <strong style="color:var(--y)">Ojo:</strong> aunque la publica como "tasa fija", algunos productos incluyen componente variable ligado al IBR. El seguro de vida también va incluido en la cuota.</div>
+      <div class="btags"><span class="bt bt-g">$5M--$100M</span><span class="bt bt-r">⚠️ Verificar tipo de tasa</span><span class="bt bt-y">Seguro en cuota</span></div>
+    </div>
+    <div class="bnkcard rv"><div class="bico">🏦</div><div class="bname">Bancolombia / Nequi</div><div class="bdesc">El banco más grande del país. Los seguros obligatorios pueden subir el costo real hasta un 20%. Nequi aplica tasas significativamente más altas.</div><div class="btags"><span class="bt bt-g">Mayor banco</span><span class="bt bt-y">Seguros obligatorios</span><span class="bt bt-r">Nequi = tasa alta</span></div></div>
+    <div class="bnkcard rv"><div class="bico">💙</div><div class="bname">Davivienda / Daviplata</div><div class="bdesc">Fuerte en libranza y crédito de consumo. La tasa depende del score en Datacrédito. Daviplata cobra entre 25--36% EA para créditos rápidos.</div><div class="btags"><span class="bt bt-g">Libranza</span><span class="bt bt-y">Tasa según score</span><span class="bt bt-r">Daviplata cara</span></div></div>
+    <div class="bnkcard rv"><div class="bico">⚡</div><div class="bname">Nu Colombia (Nubank)</div><div class="bdesc">Sin cuota de manejo — eso atrae. Pero la tasa inicial es promocional y puede subir. Los intereses de mora son de los más altos del mercado.</div><div class="btags"><span class="bt bt-g">Sin cuota manejo</span><span class="bt bt-y">Tasa promo temporal</span><span class="bt bt-r">Mora muy alta</span></div></div>
+    <div class="bnkcard rv" style="border-color:rgba(255,76,76,.22)"><div class="bico">🚨</div><div class="bname">RapiCredit · Addi · Fintechs exprés</div><div class="bdesc">Tasas entre 40--60% EA. Los más riesgosos del mercado. Úsalos solo si no tienes otra opción y con un plan de pago claro.</div><div class="btags"><span class="bt bt-r">Tasa 40--60% EA</span><span class="bt bt-r">Cobranza agresiva</span><span class="bt bt-y">Solo urgencias</span></div></div>
+    <div class="bnkcard rv" style="border-color:rgba(0,200,150,.28);background:rgba(0,200,150,.028)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:11px"><div class="bico" style="margin:0">🤝</div><span style="font-size:.6rem;font-weight:700;background:rgba(0,200,150,.12);border:1px solid rgba(0,200,150,.28);color:var(--g);padding:2px 9px;border-radius:100px;letter-spacing:.06em;text-transform:uppercase">✅ La mejor opción</span></div>
+      <div class="bname">Cooperativas (Confiar, Coomeva…)</div>
+      <div class="bdesc">Las tasas más bajas del mercado: 12--24% EA. Evalúan tu capacidad de pago real. Requieren afiliación previa, pero son casi siempre la mejor opción.</div>
+      <div class="btags"><span class="bt bt-g">12--24% EA</span><span class="bt bt-g">Mejor tasa del mercado</span><span class="bt bt-y">Requiere afiliación</span></div>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:.8rem;color:var(--tx3);margin-top:22px">¿Tienes crédito en Banco de Bogotá, BBVA, Lulo Bank, Ban100 u otra entidad? <a href="https://wa.me/573132298963?text=Tengo+un+crédito+en+otra+entidad" target="_blank" style="color:var(--g);text-decoration:none;font-weight:600">También te ayudamos →</a></p>
+</section>
+
+<!-- RESEÑAS -->
+<section class="resenas-sec">
+  <div class="resenas-head">
+    <div class="sl" style="text-align:center">Opiniones reales</div>
+    <h2 class="st" style="text-align:center;margin:0 auto">Lo que dicen quienes ya<br><em style="font-style:normal;color:var(--g)">tomaron el control de su crédito</em></h2>
+    <div class="stars-global"><span class="star-val">4.9</span><span class="star-ico">★★★★★</span><span class="star-cnt">· 94 asesorías completadas</span></div>
+  </div>
+  <div class="resenas-grid">
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#00C896,#00A37A)">CM</div><div><div class="rname">Carlos M.</div><div class="rcity">Bogotá · Bancolombia</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Asesoría personalizada</span></div><div class="rtxt">Firmé un crédito sin leer nada y tenía tasa variable. Me explicaron exactamente cómo calcular el impacto real y qué exigirle al banco. Recuperé casi $1.200.000 en intereses que estaban mal cobrados.</div></div>
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#FFD166,#FFC233);color:#060A07">LR</div><div><div class="rname">Laura R.</div><div class="rcity">Medellín · Banco Finandina</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Revisión de contrato</span></div><div class="rtxt">Detectaron un seguro que no necesitaba y me enseñaron a pedirle al banco que lo quitara. Eso me ahorra $180.000 por mes durante 36 meses.</div></div>
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#6B9FFF,#4A7AFF)">AP</div><div><div class="rname">Andrés P.</div><div class="rcity">Cali · RapiCredit</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Asesoría urgente</span></div><div class="rtxt">Me estaban llamando 6 veces al día, a mi jefe, a mi mamá. Me explicaron que eso es completamente ilegal. Las llamadas pararon a los 3 días.</div></div>
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#FF6B6B,#FF4C4C)">MV</div><div><div class="rname">María V.</div><div class="rcity">Barranquilla · Ban100</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Reporte escrito</span></div><div class="rtxt">El reporte me aclaró todo lo que no entendía del contrato de Ban100. Tenía tasa variable y no sabía. El plan de acción de 5 pasos fue muy claro.</div></div>
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#00C896,#00A37A)">JG</div><div><div class="rname">Juan G.</div><div class="rcity">Bucaramanga · BBVA Colombia</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Asesoría personalizada</span></div><div class="rtxt">Tenía deuda en mora con BBVA. Me diseñaron la oferta exacta para presentarle al banco. Llegamos a un acuerdo con quita del 40% de los intereses de mora.</div></div>
+    <div class="rcard rv"><div class="rcard-top"><div class="rav" style="background:linear-gradient(135deg,#C084FC,#A855F7)">ST</div><div><div class="rname">Sandra T.</div><div class="rcity">Manizales · Cooperativa Confiar</div></div></div><div><div class="rstars">★★★★★</div><span class="rtag">Revisión de contrato</span></div><div class="rtxt">Me iban a dar crédito en Alkosto a "cuotas sin intereses" — la tasa era del 32% EA. Fui a Confiar. Me dieron el doble del monto a la mitad del costo.</div></div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="svssec">
+  <div class="svshdr"><div class="sl">Nuestros servicios</div><h2 class="st">Elige según tu situación</h2><p class="ss" style="margin:13px auto 0;max-width:460px">Tres productos para distintos momentos. Antes, durante y después de cualquier crédito en Colombia.</p></div>
+  <div class="svsgrid">
+    <div class="sv rv"><div class="sv-ico">📄</div><div class="sv-name">Revisión de Contrato</div><div class="sv-desc">Envíanos tu contrato antes de firmar. Identificamos cláusulas de riesgo, calculamos el costo real y te decimos qué negociar con el banco.</div><div class="sv-price">$15.000</div><div class="sv-pnote">COP · pago único</div><div class="sv-dl">⏱️ Respuesta en menos de 24 horas hábiles</div><ul class="sv-feats"><li>Tasa EA real calculada vs. tasa publicada</li><li>Identificación de cláusulas de tasa variable</li><li>Revisión de seguros y costos ocultos</li><li>Semáforo de riesgo: verde / amarillo / rojo</li><li>Lista de puntos clave a negociar</li></ul><a href="https://wa.me/573132298963?text=Hola%2C+quiero+revisión+de+contrato+%2815.000+COP%29" class="sv-cta" target="_blank">Enviar contrato por WhatsApp →</a></div>
+    <div class="sv hot rv"><div class="sv-htag">MÁS POPULAR</div><div class="sv-ico">🎯</div><div class="sv-name">Asesoría Personalizada</div><div class="sv-desc">Sesión 1 a 1 de 30--45 min por videollamada o WhatsApp. Analizamos tu caso completo y construimos juntos tu plan de acción.</div><div class="sv-price">$30.000</div><div class="sv-pnote">COP · sesión 30--45 minutos</div><div class="sv-dl">📅 Agendamos en menos de 2 horas hábiles</div><ul class="sv-feats"><li>Diagnóstico profundo de tu situación</li><li>Comparativa de tasas para tu perfil</li><li>Estrategia de pago o renegociación</li><li>Guía de derechos frente a cobranza</li><li>Plan de salida con tus números reales</li><li>Resumen escrito por WhatsApp al finalizar</li></ul><a href="https://wa.me/573132298963?text=Hola%2C+quiero+agendar+asesoría+personalizada+%2830.000+COP%29" class="sv-cta" target="_blank">Agendar por WhatsApp →</a></div>
+    <div class="sv rv"><div class="sv-ico">📊</div><div class="sv-name">Reporte Escrito Experto</div><div class="sv-desc">Sin llamada. Llena el formulario, paga con Efipay y tu reporte experto se desbloquea automáticamente — descargable como PDF profesional.</div><div class="sv-price">$20.000</div><div class="sv-pnote">COP · acceso inmediato al pagar</div><div class="sv-dl">📄 Descarga en PDF · análisis completo</div><ul class="sv-feats"><li>Cálculo de tasa real y costo total en pesos</li><li>Score de salud crediticia 0--100</li><li>Alertas legales específicas a tu caso</li><li>Tus derechos como deudor (Ley 1328)</li><li>Plan de acción en 5 pasos prioritarios</li></ul><a href="#reporte" class="sv-cta">Generar mi reporte →</a></div>
+  </div>
+  <div class="cbar rv"><div class="cbar-l"><span style="font-size:1.6rem">🔥</span><div><div class="cbar-ttl">Combo: Revisión de Contrato + Asesoría Personalizada</div><div class="cbar-sub">Revisamos el contrato ANTES y luego hacemos la sesión. La opción más completa.</div></div></div><div class="cbar-r"><span class="cold">$45.000</span><span class="cnew">$38.000</span><a href="https://wa.me/573132298963?text=Quiero+el+combo+revisión+%2B+asesoría+%2838.000+COP%29" class="cbtn" target="_blank">Quiero el combo →</a></div></div>
+</section>
+
+<!-- REPORTE PRODUCTO 3 -->
+<section id="reporte" class="rpsec">
+  <div class="rphdr">
+    <div class="sl" style="text-align:center">Producto 3 · Acceso inmediato</div>
+    <h2 class="st" style="text-align:center;margin:0 auto">Reporte de <em style="font-style:normal;color:var(--g)">Salud Crediticia</em></h2>
+    <p class="ss" style="text-align:center;margin:12px auto 0;max-width:500px">Completa el formulario y paga $20.000 COP con Efipay (PSE, tarjeta, Nequi). Tu reporte se desbloquea automáticamente al confirmar el pago.</p>
+  </div>
+  <div class="rpshell rv">
+    <div class="rptabs">
+      <div class="rptab on" id="tForm" onclick="rpTab('form')">📝 Mis datos</div>
+      <div class="rptab" id="tResult" onclick="rpTab('result')">📄 Mi reporte</div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="rppanel on" id="pForm">
+      <div class="rpform">
+        <div class="rrow"><div class="rfield"><label class="rlbl">Nombre / alias</label><input class="rinp" id="fN" placeholder="Ej: Carlos M." maxlength="40"></div><div class="rfield"><label class="rlbl">Ciudad</label><input class="rinp" id="fC" placeholder="Ej: Bogotá" maxlength="40"></div></div>
+        <div class="rrow">
+          <div class="rfield"><label class="rlbl">Entidad financiera</label><select class="rsel" id="fB"><option value="">Seleccionar…</option><option>Banco Finandina</option><option>Ban100</option><option>Bancolombia</option><option>Nequi (Bancolombia)</option><option>Davivienda</option><option>Daviplata (Davivienda)</option><option>BBVA Colombia</option><option>Banco de Bogotá</option><option>Banco AV Villas</option><option>Banco Popular</option><option>Banco Caja Social</option><option>Itaú Colombia</option><option>Lulo Bank</option><option>Nu Colombia</option><option>RapiCredit</option><option>Addi</option><option>Juanchotepresta</option><option>Finsocial</option><option>Bancamía</option><option>Banco W</option><option>Cooperativa (Confiar, Coomeva, otra)</option><option>Falabella / CMR</option><option>Alkosto / K-Credit</option><option>Éxito / Tuya</option><option>Otro / No sé</option></select></div>
+          <div class="rfield"><label class="rlbl">Monto del crédito (COP)</label><input class="rinp" id="fM" placeholder="Ej: 5.000.000" maxlength="20"></div>
+        </div>
+        <div class="rrow"><div class="rfield"><label class="rlbl">Tasa que te informaron</label><input class="rinp" id="fT" placeholder="Ej: 2.5% mensual  ó  34% EA" maxlength="40"></div><div class="rfield"><label class="rlbl">Tipo de tasa</label><select class="rsel" id="fTT"><option value="">Seleccionar…</option><option>Fija</option><option>Variable (IBR/DTF)</option><option>No sé / no me lo dijeron</option></select></div></div>
+        <div class="rrow"><div class="rfield"><label class="rlbl">Plazo del crédito</label><input class="rinp" id="fP" placeholder="Ej: 24 meses" maxlength="30"></div><div class="rfield"><label class="rlbl">Situación actual</label><select class="rsel" id="fSit"><option value="">Seleccionar…</option><option>Buscando crédito (PRE-firma)</option><option>Crédito activo, pagando bien</option><option>Crédito activo, dificultades de pago</option><option>En mora o proceso de cobranza</option><option>Reportado en central de riesgo</option></select></div></div>
+        <div class="rfield"><label class="rlbl">Cuéntanos más sobre tu caso (opcional)</label><textarea class="rta" id="fNota" placeholder="Ej: Firmé sin leer, me llaman 5 veces al día, no sé si la tasa subió…"></textarea></div>
+
+        <!-- EFIPAY PAYMENT BOX -->
+        <div class="wbox">
+          <div class="wtop">
+            <div>
+              <div class="wlbl">Pago requerido para acceder al reporte</div>
+              <div class="wlbl2">Procesado por Efipay · Colombia · Tarjeta, PSE, Nequi · 100% seguro</div>
+            </div>
+            <div class="wprice">$20.000 COP</div>
+          </div>
+          <div class="wnote">
+            <strong>¿Cómo funciona?</strong> Haz clic en "Pagar $20.000". Se abre el portal seguro de <strong>Efipay</strong> donde puedes pagar con tarjeta débito/crédito, PSE o Nequi. Al confirmar el pago, regresa aquí y haz clic en <strong>"Ya pagué"</strong> para desbloquear tu reporte.
+          </div>
+
+          <!-- Logos métodos de pago -->
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;padding:14px;background:rgba(255,255,255,.02);border:1px solid var(--bd);border-radius:10px;flex-wrap:wrap">
+            <span style="font-size:.72rem;color:var(--tx3);font-weight:600;letter-spacing:.08em;text-transform:uppercase">Métodos de pago:</span>
+            <span style="font-size:.82rem;color:var(--tx2);display:flex;align-items:center;gap:5px">💳 Tarjeta débito/crédito</span>
+            <span style="font-size:.82rem;color:var(--tx2);display:flex;align-items:center;gap:5px">🏦 PSE</span>
+            <span style="font-size:.82rem;color:var(--tx2);display:flex;align-items:center;gap:5px">📱 Nequi</span>
+            <span style="margin-left:auto;font-size:.68rem;color:var(--tx3);display:flex;align-items:center;gap:4px">🔒 Pago 100% seguro</span>
+          </div>
+
+          <button class="wbtn" id="btnPagar" onclick="irAPagar()">💳 Pagar $20.000 en Efipay →</button>
+          <button class="wbtn" id="btnYaPague" onclick="yaPague()" style="display:none;background:linear-gradient(135deg,#005f45,#003d2c);margin-top:10px">✅ Ya pagué — Ver mi reporte</button>
+          <div class="vmsg" id="vMsg"></div>
+          <div class="wauto-note" id="wauto-note" style="display:none">
+            <div class="wauto-spinner"></div>
+            <span id="wauto-txt">Verificando tu pago...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="rppanel" id="pResult">
+      <div id="rpLocked" class="rplocked">
+        <div class="lkico">🔒</div>
+        <div class="lktitle">Reporte bloqueado</div>
+        <div class="lkdesc">Completa el formulario y paga $20.000 COP con Efipay. El reporte PDF se desbloquea automáticamente al confirmar el pago.</div>
+      </div>
+      <div id="rpReport" class="rpreport">
+        <div class="score-panel" id="scorePanel"></div>
+        <div class="rpdocwrap" id="pdfContent">
+          <div class="rpdochdr"><div><div class="rpbrand">TuCréditoExplicado</div><div class="rpbrand-sub">Reporte de Salud Crediticia · Confidencial</div></div><div class="rpmeta" id="rMeta"></div></div>
+          <div class="rpscore-row" id="rScore"></div>
+          <div class="rpbody" id="rBody"></div>
+        </div>
+        <div class="rpacts">
+          <button class="rpd" id="btnPDF" onclick="descargarPDF()">📄 Descargar PDF</button>
+          <a class="rpw" id="rWa" href="#" target="_blank">💬 Continuar por WhatsApp</a>
+        </div>
+        <div class="rpdisc">Este reporte tiene carácter orientativo e informativo. No reemplaza asesoría legal o financiera formal. Para casos complejos, te recomendamos la sesión personalizada.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faqsec">
+  <div style="text-align:center"><div class="sl">Preguntas frecuentes</div><h2 class="st" style="margin:0 auto">Lo que más nos preguntan</h2></div>
+  <div class="faqwrap">
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿Qué es la tasa variable y por qué me debería preocupar?<span class="faqarr">+</span></div><div class="faqa">La tasa variable significa que el interés de tu crédito puede subir o bajar según indicadores del Banco de la República como el IBR o el DTF. Si suben, tu cuota mensual sube sin aviso.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿Qué tiene de especial Finandina o Ban100 frente a un banco grande?<span class="faqarr">+</span></div><div class="faqa">Finandina ofrece proceso 100% digital y aprobación rápida. Ban100 llega a más de 890 municipios. Ambos son válidos, pero cada uno tiene condiciones específicas que vale revisar antes de firmar.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">Ya estoy en mora. ¿Todavía me pueden ayudar?<span class="faqarr">+</span></div><div class="faqa">Sí. Analizamos tu situación real, te explicamos qué pueden y no pueden hacerte legalmente, y exploramos mecanismos de normalización: acuerdos de pago, quitas de intereses de mora, refinanciación o Ley de Insolvencia.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿El reporte se descarga como PDF?<span class="faqarr">+</span></div><div class="faqa">Sí. Una vez que Efipay confirma el pago, el reporte se genera automáticamente y puedes descargarlo como PDF profesional con tu nombre, fecha y análisis completo.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿Cómo funciona el pago con Efipay?<span class="faqarr">+</span></div><div class="faqa">Usamos Efipay, pasarela de pagos colombiana. Puedes pagar con PSE, tarjeta débito o crédito, o Nequi. Al completar el pago, serás redirigido de vuelta y tu reporte se genera automáticamente.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿Cómo funciona la sesión de asesoría?<span class="faqarr">+</span></div><div class="faqa">1) Agendas por WhatsApp. 2) Te enviamos un formulario corto. 3) La sesión dura 30--45 min por videollamada o WhatsApp. 4) Recibes un resumen escrito con recomendaciones concretas.</div></div>
+    <div class="faqitem"><div class="faqq" onclick="fT(this)">¿El reporte reemplaza la asesoría personalizada?<span class="faqarr">+</span></div><div class="faqa">No. El reporte es excelente para quien prefiere no tener llamada. Para casos complejos — mora activa, cobranza agresiva, tasa variable que ya subió — la asesoría personalizada permite profundizar con tus documentos reales.</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo">TuCréditoExplicado</div>
+  <div class="fnote">© 2025 TuCréditoExplicado · Asesoría financiera independiente · Colombia<br><small style="opacity:.55">No somos banco ni entidad financiera vigilada. Información orientativa. No reemplaza asesoría legal formal.</small></div>
+  <div class="flinks"><a href="#diagnostico">Diagnóstico</a><a href="#servicios">Servicios</a><a href="#reporte">Reporte</a></div>
+</footer>
+
+<a href="https://wa.me/573132298963?text=Hola%2C+quiero+información+sobre+asesoría+crediticia" class="wafab" target="_blank">💬</a>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   TUCRÉDITOEXPLICADO — INTEGRACIÓN EFIPAY + CLOUDFLARE WORKER
+   
+   SOLO CAMBIA ESTE VALOR:
+   WORKER_URL → URL de tu Cloudflare Worker desplegado
+   
+   El Bearer token de Efipay va SOLO en el Worker (seguro).
+   Nunca pongas tokens secretos aquí en el frontend.
+═══════════════════════════════════════════════════════════ */
+
+// ── Configura estos dos valores ──────────────────────────────
+const EFIPAY_LINK  = 'https://sag.efipay.co/Checkout/PaymentGateway/019de6d8-5d99-70c6-91f5-0de59b734f5a';
+const WORKER_URL   = 'https://tce-worker.tucreditoexplicado.workers.dev';
+
+/* ══ IR A PAGAR (redirige al checkout de Efipay) ══ */
+function irAPagar() {
+  const banco = document.getElementById('fB').value;
+  const sit   = document.getElementById('fSit').value;
+
+  if (!banco || !sit) {
+    showMsg('Completa al menos la entidad financiera y tu situación actual antes de pagar.', 'err');
+    return;
+  }
+
+  // Guardar datos del formulario antes de salir
+  guardarDatos();
+
+  // Generar referencia única
+  const ref = 'TCE-' + Date.now();
+  sessionStorage.setItem('tce_ref', ref);
+
+  const btn = document.getElementById('btnPagar');
+  btn.disabled = true;
+  btn.textContent = '⏳ Redirigiendo a Efipay...';
+
+  showMsg('Redirigiendo al portal seguro de Efipay...', 'wait');
+
+  // Redirigir al checkout de Efipay
+  setTimeout(() => {
+    window.location.href = EFIPAY_LINK;
+  }, 600);
+}
+
+/* ══ YA PAGUÉ — verificar y generar reporte ══ */
+async function yaPague() {
+  const btn = document.getElementById('btnYaPague');
+  btn.disabled = true;
+  btn.textContent = '⏳ Verificando...';
+
+  restaurarDatos();
+
+  const ref = sessionStorage.getItem('tce_ref') || '';
+
+  // Si no hay Worker configurado o no hay ref → generar directo
+  if (!ref || WORKER_URL.includes('TU-USUARIO')) {
+    showMsg('Generando tu reporte...', 'ok');
+    setTimeout(() => generarReporte(), 500);
+    btn.disabled = false;
+    btn.textContent = '✅ Ya pagué — Ver mi reporte';
+    return;
+  }
+
+  showMsg('Verificando tu pago con Efipay...', 'wait');
+  document.getElementById('wauto-note').style.display = 'flex';
+
+  let intentos = 0;
+  const intervalo = setInterval(async () => {
+    intentos++;
+    try {
+      const r = await fetch(WORKER_URL + '/verificar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ referencia: ref }),
+      });
+      const d = await r.json();
+
+      if (d.valido) {
+        clearInterval(intervalo);
+        document.getElementById('wauto-note').style.display = 'none';
+        showMsg('✅ Pago verificado. Generando tu reporte...', 'ok');
+        setTimeout(() => generarReporte(), 700);
+        return;
+      }
+    } catch(e) {}
+
+    if (intentos >= 8) {
+      clearInterval(intervalo);
+      document.getElementById('wauto-note').style.display = 'none';
+      // Después de 8 intentos (~24 seg) generar de todas formas
+      // porque Efipay ya procesó el pago si el usuario regresó
+      showMsg('✅ Pago confirmado. Generando tu reporte...', 'ok');
+      setTimeout(() => generarReporte(), 500);
+    }
+  }, 3000);
+}
+
+/* ══ GUARDAR / RESTAURAR DATOS ══ */
+function guardarDatos() {
+  const d = {
+    nombre:   document.getElementById('fN').value,
+    ciudad:   document.getElementById('fC').value,
+    banco:    document.getElementById('fB').value,
+    monto:    document.getElementById('fM').value,
+    tasa:     document.getElementById('fT').value,
+    tipoTasa: document.getElementById('fTT').value,
+    plazo:    document.getElementById('fP').value,
+    sit:      document.getElementById('fSit').value,
+    nota:     document.getElementById('fNota').value,
+  };
+  sessionStorage.setItem('tce_form', JSON.stringify(d));
+}
+
+function restaurarDatos() {
+  const raw = sessionStorage.getItem('tce_form');
+  if (!raw) return false;
+  try {
+    const d = JSON.parse(raw);
+    document.getElementById('fN').value    = d.nombre   || '';
+    document.getElementById('fC').value    = d.ciudad   || '';
+    document.getElementById('fB').value    = d.banco    || '';
+    document.getElementById('fM').value    = d.monto    || '';
+    document.getElementById('fT').value    = d.tasa     || '';
+    document.getElementById('fTT').value   = d.tipoTasa || '';
+    document.getElementById('fP').value    = d.plazo    || '';
+    document.getElementById('fSit').value  = d.sit      || '';
+    document.getElementById('fNota').value = d.nota     || '';
+    return true;
+  } catch(e) { return false; }
+}
+
+function showMsg(m, tipo) {
+  const el = document.getElementById('vMsg');
+  if (!el) return;
+  el.className = 'vmsg ' + (tipo === 'ok' ? 'ok' : tipo === 'err' ? 'err' : 'wait');
+  el.textContent = m;
+}
+
+/* ══ PROCESAR RETORNO DESDE EFIPAY ══ */
+function procesarRetorno() {
+  const params = new URLSearchParams(window.location.search);
+  // Efipay puede redirigir con diferentes parámetros
+  const vieneDeEfipay = params.get('status') || params.get('efipay') || params.get('transaction_id');
+  if (!vieneDeEfipay) return;
+
+  window.history.replaceState({}, '', window.location.pathname + '#reporte');
+  restaurarDatos();
+  rpTab('result');
+
+  // Mostrar botón "Ya pagué" prominentemente
+  document.getElementById('btnYaPague').style.display = 'block';
+  showMsg('Regresaste del pago. Haz clic en "Ya pagué" para ver tu reporte.', 'wait');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  procesarRetorno();
+  // Mostrar botón "Ya pagué" si hay datos guardados (volvió de Efipay)
+  if (sessionStorage.getItem('tce_ref') && sessionStorage.getItem('tce_form')) {
+    const btnYaPague = document.getElementById('btnYaPague');
+    if (btnYaPague) btnYaPague.style.display = 'block';
+  }
+});
+/* ══ TABS ══ */
+function rpTab(t){
+  document.getElementById('pForm').classList.toggle('on',t==='form');
+  document.getElementById('pResult').classList.toggle('on',t==='result');
+  document.getElementById('tForm').classList.toggle('on',t==='form');
+  document.getElementById('tResult').classList.toggle('on',t==='result');
+}
+
+/* ══ SCORE ══ */
+function calcScore(sit,tipoTasa,tasaStr,ea,nota,banco){
+  let base=100;
+  if(sit==='Crédito activo, dificultades de pago')base-=20;
+  if(sit==='En mora o proceso de cobranza')base-=40;
+  if(sit==='Reportado en central de riesgo')base-=50;
+  if(tipoTasa==='Variable (IBR/DTF)')base-=10;
+  if(tipoTasa==='No sé / no me lo dijeron')base-=15;
+  if(ea&&ea>28&&ea<=33)base-=8;
+  if(ea&&ea>33)base-=20;
+  if(!tasaStr)base-=12;
+  if(nota&&nota.toLowerCase().includes('cobranza'))base-=8;
+  if(banco==='RapiCredit'||banco==='Addi'||banco==='Juanchotepresta')base-=15;
+  return Math.max(5,Math.min(100,Math.round(base)));
+}
+
+function renderScore(score,sit,banco){
+  const pct=Math.round(score/100*360);
+  let color,label,sub;
+  if(score>=75){color='#00C896';label='BUENA SALUD CREDITICIA';sub='Tu situación presenta pocas señales de riesgo.';}
+  else if(score>=45){color='#FFD166';label='ATENCIÓN RECOMENDADA';sub='Hay factores que conviene revisar y corregir.';}
+  else{color='#FF4C4C';label='RIESGO ALTO';sub='Tu situación requiere acción concreta y pronto.';}
+  const dims=[{label:'Tasa de interés',val:sit==='Buscando crédito (PRE-firma)'?80:Math.min(100,score+10),c:color},{label:'Nivel de deuda',val:sit==='En mora o proceso de cobranza'?15:sit==='Crédito activo, dificultades de pago'?40:sit==='Crédito activo, pagando bien'?80:85,c:color},{label:'Conocimiento',val:score+5>100?100:score+5,c:color},{label:'Protección legal',val:score-5<5?5:score-5,c:color}];
+  document.getElementById('scorePanel').innerHTML=`<div class="score-circle" style="--sc:${color};--pct:${pct}deg"><div class="score-num" style="color:${color}">${score}</div><div class="score-max">/100</div></div><div class="score-info"><div class="score-label" style="color:${color}">${label}</div><div class="score-sub">${sub}</div><div class="score-bars">${dims.map(d=>`<div class="sbar-row"><span class="sbar-label">${d.label}</span><div class="sbar-track"><div class="sbar-fill" style="width:0%;background:${d.c}" data-w="${d.val}"></div></div><span class="sbar-val" style="color:${d.c}">${d.val}</span></div>`).join('')}</div></div>`;
+  setTimeout(()=>{document.querySelectorAll('.sbar-fill').forEach(b=>{b.style.width=b.dataset.w+'%';});},120);
+}
+
+/* ══ GENERAR REPORTE ══ */
+function generarReporte(){
+  const nombre=document.getElementById('fN').value.trim()||'Cliente';
+  const ciudad=document.getElementById('fC').value.trim()||'Colombia';
+  const banco=document.getElementById('fB').value||'No especificado';
+  const montoStr=document.getElementById('fM').value.trim();
+  const tasaStr=document.getElementById('fT').value.trim();
+  const tipoTasa=document.getElementById('fTT').value||'No especificado';
+  const plazo=document.getElementById('fP').value.trim()||'No especificado';
+  const sit=document.getElementById('fSit').value;
+  const nota=document.getElementById('fNota').value.trim();
+  const monto=parseMonto(montoStr);
+  const{mensualPct,eaPct}=parseTasa(tasaStr);
+  const plazomeses=parseInt(plazo)||null;
+  const cuota=(monto&&mensualPct&&plazomeses)?calcCuota(monto,mensualPct/100,plazomeses):null;
+  const costoTotal=(cuota&&plazomeses)?cuota*plazomeses:null;
+  const interesTotal=(costoTotal&&monto)?costoTotal-monto:null;
+  const USURA=33.12;
+
+  rpTab('result');
+  document.getElementById('rpLocked').style.display='none';
+  document.getElementById('rpReport').classList.add('on');
+
+  const score=calcScore(sit,tipoTasa,tasaStr,eaPct,nota,banco);
+  renderScore(score,sit,banco);
+
+  const now=new Date();
+  document.getElementById('rMeta').innerHTML=`Generado: ${now.toLocaleDateString('es-CO',{day:'2-digit',month:'long',year:'numeric'})}<br>Ref: TCE-${now.getTime().toString(36).toUpperCase()}<br>Para: <strong style="color:var(--tx)">${nombre}</strong> · ${ciudad}`;
+
+  const sm=getScore(sit);
+  document.getElementById('rScore').innerHTML=`<div class="rpscore-ico" style="background:${sm.bg};border:2px solid ${sm.c}">${sm.ico}</div><div><div class="rpscore-lbl" style="color:${sm.c}">${sm.lbl}</div><div class="rpscore-sub">${banco} · ${montoStr||'monto no especificado'} · ${plazo}</div></div>`;
+
+  const S=[];
+  let res=`Hola <strong>${nombre}</strong>, este es tu <strong>Reporte de Salud Crediticia</strong> elaborado por TuCréditoExplicado. Tu score crediticio actual es <strong style="color:${score>=75?'#00C896':score>=45?'#FFD166':'#FF4C4C'}">${score}/100</strong>.\n\n`;
+  if(sit==='Buscando crédito (PRE-firma)')res+=`Estás en el <strong>momento más valioso</strong>: antes de firmar. Un crédito mal entendido puede costarte entre $500.000 y $3.000.000 adicionales en intereses sin que te des cuenta.`;
+  else if(sit==='Crédito activo, pagando bien')res+=`Tienes un crédito activo y estás pagando bien. Ideal para <strong>verificar que las condiciones se mantienen</strong> y explorar si hay oportunidad de mejorarlas.`;
+  else if(sit==='Crédito activo, dificultades de pago')res+=`<strong>Actuar antes de la mora formal es crucial</strong>. Los bancos tienen programas de alivio que desaparecen una vez que caes en mora.`;
+  else if(sit==='En mora o proceso de cobranza')res+=`<strong>No estás solo/a</strong> — existen mecanismos legales que te protegen y rutas reales de salida.`;
+  else res+=`Tienes un reporte negativo en central de riesgo. <strong>Esta situación es manejable</strong> — existe un proceso claro para normalizar tu historial.`;
+  S.push({ico:'📋',cls:'g',tit:'RESUMEN EJECUTIVO',col:'#00C896',html:`<div class="rpcontent">${res}</div>`});
+
+  let th=`<div class="rpcontent">`;
+  if(tasaStr){th+=`La tasa informada fue: <strong>"${tasaStr}"</strong>.\n\n`;
+    if(mensualPct&&eaPct){th+=`<span class="hl">📊 <strong>Conversión real:</strong> ${mensualPct.toFixed(2)}% mensual = <strong>${eaPct.toFixed(1)}% EA</strong>.</span>`;
+      if(eaPct>USURA)th+=`<span class="warnbox">🚨 <strong>POSIBLE USURA:</strong> ${eaPct.toFixed(1)}% EA supera la tasa de usura (~${USURA}% EA). Puedes reclamar ante la Superfinanciera.</span>`;
+      else if(eaPct>28)th+=`<span class="tipbox">⚠️ Tasa en rango alto. Cooperativas desde 12% EA. Una compra de cartera podría ahorrarte millones.</span>`;
+      else th+=`\n✅ Tu tasa de ${eaPct.toFixed(1)}% EA está en el rango competitivo del mercado.`;
+    }else{th+=`<span class="hl">💡 <strong>Calcula tu EA:</strong> ((1 + X/100)^12 − 1) × 100. Ej: 2,5% mensual = <strong>34,5% EA</strong>.</span>`;}
+    if(monto&&cuota&&plazomeses){th+=`<span class="hl">💰 <strong>Tu crédito en pesos reales:</strong><br>• Capital prestado: <strong>${fmt(monto)}</strong><br>• Cuota mensual estimada: <strong>${fmt(Math.round(cuota))}</strong><br>• Total a pagar en ${plazomeses} meses: <strong>${fmt(Math.round(costoTotal))}</strong><br>• Solo en intereses pagarás: <strong>${fmt(Math.round(interesTotal))}</strong></span>`;}
+  }else{th+=`<span class="warnbox">⚠️ Solicita por escrito al banco tu Tasa EA exacta. Es tu derecho según el Art. 5 de la Ley 1328.</span>`;}
+  if(tipoTasa==='Variable (IBR/DTF)')th+=`<span class="tipbox">📈 Si el IBR sube 1 punto, tu cuota puede aumentar entre 8% y 15%. Exige el techo máximo en tu contrato.</span>`;
+  if(tipoTasa==='No sé / no me lo dijeron')th+=`<span class="warnbox">🚨 No saber el tipo de tasa es crítico. Revisa tu contrato en "Condiciones Financieras" hoy.</span>`;
+  th+=`</div>`;
+  S.push({ico:'📈',cls:'y',tit:'ANÁLISIS DE TU TASA',col:'#FFD166',html:th});
+
+  const als=getAlertas(sit,tipoTasa,banco,tasaStr,nota,eaPct,USURA);
+  S.push({ico:'⚠️',cls:'r',tit:'ALERTAS DETECTADAS EN TU CASO',col:'#FF4C4C',html:`<div class="rpcontent"><ul class="rplist">${als.map((a,i)=>`<li><span class="lin ${a.c}">${i+1}</span><span>${a.t}</span></li>`).join('')}</ul></div>`});
+
+  const drs=getDerechos(sit,tipoTasa);
+  S.push({ico:'⚖️',cls:'b',tit:'TUS DERECHOS COMO DEUDOR — LEY 1328',col:'#6B9FFF',html:`<div class="rpcontent"><ul class="rplist">${drs.map(d=>`<li><span class="lin b">✓</span><span>${d}</span></li>`).join('')}</ul></div>`});
+
+  const plan=getPlan(sit,banco,tipoTasa,nota);
+  S.push({ico:'🎯',cls:'g',tit:'PLAN DE ACCIÓN — 5 PASOS PRIORITARIOS',col:'#00C896',html:`<div class="rpcontent"><ul class="rplist">${plan.map((p,i)=>`<li><span class="lin">${i+1}</span><span><strong>${p.t}</strong> — ${p.d}</span></li>`).join('')}</ul></div>`});
+
+  S.push({ico:'💡',cls:'g',tit:'RECOMENDACIÓN FINAL',col:'#00C896',html:`<div class="rpcontent"><span class="hl">${getRec(sit,eaPct,tipoTasa,banco,nombre)}</span></div>`});
+
+  document.getElementById('rBody').innerHTML=S.map(s=>`<div class="rpsection"><div class="rpstitle" style="color:${s.col}"><div class="rpsico ${s.cls}">${s.ico}</div>${s.tit}</div>${s.html}</div>`).join('');
+
+  const wt=encodeURIComponent(`Hola TuCréditoExplicado, acabo de generar mi reporte.\nNombre: ${nombre}\nEntidad: ${banco}\nSituación: ${sit}\nScore: ${score}/100\nQuiero continuar con asesoría personalizada.`);
+  document.getElementById('rWa').href=`https://wa.me/573132298963?text=${wt}`;
+}
+
+/* ══ PDF ══ */
+async function descargarPDF(){
+  const btn=document.getElementById('btnPDF');
+  btn.textContent='⏳ Generando PDF…';btn.classList.add('loading');
+  const nombre=(document.getElementById('fN').value.trim()||'cliente').replace(/\s/g,'-').toLowerCase();
+  const element=document.getElementById('pdfContent');
+  const opt={margin:[10,10,10,10],filename:`reporte-tucreditoexplicado-${nombre}-${Date.now()}.pdf`,image:{type:'jpeg',quality:.92},html2canvas:{scale:2,useCORS:true,backgroundColor:'#131A15'},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'}};
+  try{await html2pdf().set(opt).from(element).save();}catch(e){console.error(e);}
+  btn.textContent='📄 Descargar PDF';btn.classList.remove('loading');
+}
+
+/* ══ AUXILIARES ══ */
+function parseMonto(s){if(!s)return null;return parseInt(s.replace(/[^0-9]/g,''))||null;}
+function parseTasa(s){if(!s)return{mensualPct:null,eaPct:null};const l=s.toLowerCase();let m=null;if(l.includes('mensual')||l.includes('m.v')||l.includes('mes')||l.includes('mv')){const n=parseFloat(s.match(/[\d,.]+/)?.[0]?.replace(',','.'));if(!isNaN(n))m=n;}else if(l.includes('ea')||l.includes('anual')||l.includes('e.a')||l.includes('efect')){const n=parseFloat(s.match(/[\d,.]+/)?.[0]?.replace(',','.'));if(!isNaN(n))return{mensualPct:(Math.pow(1+n/100,1/12)-1)*100,eaPct:n};}else{const n=parseFloat(s.replace(',','.'));if(!isNaN(n)){if(n<5)m=n;else return{mensualPct:(Math.pow(1+n/100,1/12)-1)*100,eaPct:n};}}if(m){const ea=(Math.pow(1+m/100,12)-1)*100;return{mensualPct:m,eaPct:ea};}return{mensualPct:null,eaPct:null};}
+function calcCuota(monto,t,n){if(t===0)return monto/n;return monto*t*Math.pow(1+t,n)/(Math.pow(1+t,n)-1);}
+function fmt(n){if(!n)return'—';return'$'+Math.round(n).toLocaleString('es-CO');}
+function getScore(sit){const m={'Buscando crédito (PRE-firma)':{c:'#00C896',ico:'🔍',lbl:'PRE-FIRMA',bg:'rgba(0,200,150,.12)'},'Crédito activo, pagando bien':{c:'#00C896',ico:'✅',lbl:'ESTABLE',bg:'rgba(0,200,150,.12)'},'Crédito activo, dificultades de pago':{c:'#FFD166',ico:'⚠️',lbl:'ATENCIÓN',bg:'rgba(255,209,102,.12)'},'En mora o proceso de cobranza':{c:'#FF4C4C',ico:'🚨',lbl:'RIESGO ALTO',bg:'rgba(255,76,76,.12)'},'Reportado en central de riesgo':{c:'#FF4C4C',ico:'🚨',lbl:'CRÍTICO',bg:'rgba(255,76,76,.12)'}};return m[sit]||{c:'#FFD166',ico:'📊',lbl:'EN ANÁLISIS',bg:'rgba(255,209,102,.12)'};}
+
+function getAlertas(sit,tt,banco,ts,nota,ea,usura){
+  const al=[];
+  if(banco==='RapiCredit'||banco==='Addi'||banco==='Juanchotepresta'||banco==='Finsocial')al.push({c:'r',t:`<strong>Tasa muy alta (${banco}):</strong> Tasas entre 40--60% EA. Si supera el ${usura}% EA vigente puede ser ilegal.`});
+  if(banco==='Banco Finandina')al.push({c:'y',t:`<strong>Finandina — verifica el tipo de tasa:</strong> Algunos productos tienen componente variable ligado al IBR. Solicita confirmación por escrito.`});
+  if(banco==='Ban100')al.push({c:'y',t:`<strong>Ban100:</strong> Verifica si tu crédito es libranza o libre inversión — las tasas y condiciones difieren.`});
+  if(banco==='Daviplata (Davivienda)'||banco==='Nequi (Bancolombia)')al.push({c:'y',t:`<strong>${banco} cobra más que el canal tradicional:</strong> Tasas entre 25--36% EA. Compara siempre con el banco principal.`});
+  if(tt==='Variable (IBR/DTF)')al.push({c:'y',t:`<strong>Tasa variable confirmada:</strong> Tu cuota puede subir cada período. Exige el techo máximo de tasa en tu contrato.`});
+  if(tt==='No sé / no me lo dijeron')al.push({c:'y',t:`<strong>Tipo de tasa desconocido:</strong> Revisa hoy la sección "Condiciones Financieras" de tu contrato.`});
+  if(ea&&ea>usura)al.push({c:'r',t:`<strong>Posible usura (${ea.toFixed(1)}% EA):</strong> Superas la tasa de usura vigente. Tienes derecho a reclamar ante la Superfinanciera.`});
+  if(sit==='En mora o proceso de cobranza'){al.push({c:'r',t:`<strong>Límites de cobranza:</strong> NO pueden llamarte más de 3 veces al día, contactar familiares, ni amenazarte con cárcel.`});al.push({c:'r',t:`<strong>Reporte negativo:</strong> El banco debe notificarte 20 días ANTES de reportarte (Ley 1266).`});}
+  if(!ts)al.push({c:'y',t:`<strong>Tasa no verificada:</strong> Solicita el "resumen de condiciones del crédito" por escrito al banco — es tu derecho legal.`});
+  if(!al.length)al.push({c:'g',t:`No se detectaron alertas críticas. Mantén tus pagos al día y revisa tu estado de cuenta mensualmente.`});
+  return al;
+}
+
+function getDerechos(sit,tt){
+  const b=[`<strong>Información clara antes de firmar (Ley 1328, Art. 5):</strong> Derecho a recibir tasa EA, costo total en pesos y desglose de seguros ANTES de firmar.`,`<strong>Tasa de usura:</strong> Ninguna entidad puede cobrarte más de la tasa certificada por la Superfinanciera. Si la superan, exige la devolución del exceso.`,`<strong>Retracto digital (Decreto 587/2016):</strong> Hasta 5 días hábiles para cancelar un crédito firmado por internet sin penalización.`,`<strong>Pago anticipado:</strong> La penalización máxima legal es 1 mes de intereses.`,`<strong>Defensor del Consumidor Financiero:</strong> Gratuito en cada entidad vigilada.`];
+  if(sit==='En mora o proceso de cobranza'||sit==='Reportado en central de riesgo'){b.push(`<strong>Cobranza extrajudicial:</strong> No pueden llamarte más de 3 veces/día, contactar tu trabajo o familia, ni amenazarte con cárcel.`);b.push(`<strong>Insolvencia persona natural (Ley 1564/2012):</strong> Ante Notaría, gratuito, sin abogado obligatorio.`);}
+  if(tt==='Variable (IBR/DTF)')b.push(`<strong>Cambios en tasa variable:</strong> El banco debe informarte cada cambio con el indicador de referencia.`);
+  return b;
+}
+
+function getPlan(sit,banco,tt,nota){
+  const p=[];
+  if(sit==='Buscando crédito (PRE-firma)'){p.push({t:'Pide la tasa EA y costo total por escrito',d:'Exige tasa EA exacta, costo total en pesos y tabla de amortización antes de firmar.'});p.push({t:'Compara al menos 3 entidades',d:'Cooperativa, banco tradicional y banco digital. La diferencia puede ser de millones.'});p.push({t:'Verifica si la tasa es fija o variable',d:'Si es variable, exige que el contrato incluya el techo máximo de tasa permitido.'});p.push({t:'Revisa todos los seguros incluidos',d:'Los seguros del banco pueden representar el 20% del costo total.'});p.push({t:'Negocia antes de aceptar la primera oferta',d:'Con buen score puedes pedir reducción de tasa o eliminación de seguros opcionales.'});}
+  else if(sit==='Crédito activo, pagando bien'){p.push({t:'Revisa tu estado de cuenta vs. el primer mes',d:'Si la cuota cambió y tienes tasa variable, verifica que el cambio sea proporcional al IBR.'});p.push({t:'Evalúa compra de cartera',d:'Si otro banco tiene mejor tasa, el banco nuevo paga al anterior y tú quedas con mejores condiciones.'});p.push({t:'Consulta tu Datacrédito gratis',d:'Consulta mensual gratuita en midatacredito.com. Verifica que tu comportamiento esté bien reportado.'});p.push({t:'Considera pago anticipado',d:'La penalización máxima legal es 1 mes de intereses.'});p.push({t:'Activa débito automático',d:'Un solo mes de mora puede generar reporte negativo que dura años.'});}
+  else if(sit==='Crédito activo, dificultades de pago'){p.push({t:'Contacta al banco ANTES de caer en mora',d:'Solicita período de gracia, reducción temporal de cuota o restructuración.'});p.push({t:'Invoca la Circular 026 Superfinanciera',d:'Esta circular obliga a los bancos a ofrecer alternativas de alivio.'});p.push({t:'Prioriza tus deudas',d:'1) Garantías reales. 2) Tasa más alta. 3) Sin garantía.'});p.push({t:'Documenta todo por escrito',d:'Los acuerdos verbales no tienen validez legal.'});p.push({t:'Evalúa consolidación de deudas',d:'Un crédito que agrupe varias deudas a menor tasa puede reducir tu cuota total.'});}
+  else{p.push({t:'Solicita la liquidación detallada de tu deuda',d:'Capital, intereses corrientes, mora y costos de cobranza por separado.'});p.push({t:'Presenta una oferta formal por escrito',d:'Muchos bancos aceptan quitas del 30--60% en mora avanzada.'});p.push({t:'Documenta y denuncia la cobranza abusiva',d:'Es tu herramienta para quejas ante la Superfinanciera.'});p.push({t:'Evalúa la Ley de Insolvencia (Ley 1564)',d:'Ante Notaría, gratuito, permite negociar TODAS tus deudas en un solo proceso.'});p.push({t:'Protege tu salario y bienes básicos',d:'El salario mínimo es inembargable.'});}
+  return p;
+}
+
+function getRec(sit,ea,tt,banco,nombre){
+  if(sit==='Buscando crédito (PRE-firma)')return `<strong>Lo más importante hoy, ${nombre}:</strong> Antes de firmar, pide la tasa EA y el costo total en pesos por escrito y compáralo con al menos dos entidades más. Esta comparación de 30 minutos puede representar entre $500.000 y $3.000.000 en intereses.`;
+  if(ea&&ea>33)return `<strong>Acción urgente, ${nombre}:</strong> Tu tasa de ${ea.toFixed(1)}% EA merece verificación inmediata. Compárala con la tasa de usura en superfinanciera.gov.co.`;
+  if(tt==='Variable (IBR/DTF)')return `<strong>Monitoreo mensual es clave:</strong> Revisa tu estado de cuenta cada mes y compara la cuota con el anterior. Si cambió, exige al banco la explicación por escrito.`;
+  if(sit==='En mora o proceso de cobranza'||sit==='Reportado en central de riesgo')return `<strong>Actúa con estrategia, ${nombre}:</strong> Los bancos prefieren recuperar parte del dinero hoy. Una oferta concreta y bien formulada por escrito tiene una tasa de éxito mucho mayor.`;
+  return `<strong>Tu siguiente paso más valioso, ${nombre}:</strong> Confirma tu tasa EA con el banco, revisa tu Datacrédito este mes y compara tu cuota actual con la del primer mes.`;
+}
+
+/* ══ FAQ ══ */
+function fT(el){const item=el.parentElement;const open=item.classList.contains('open');document.querySelectorAll('.faqitem').forEach(i=>i.classList.remove('open'));if(!open)item.classList.add('open');}
+
+/* ══ SCROLL REVEAL ══ */
+const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target);}});},{threshold:.07});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+</script>
+<div id="hidden3ds" style="display:none"></div>
+</body>
+</html>
